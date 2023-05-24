@@ -30,6 +30,9 @@ public class ManejoArrayList3 {
         
         
         // ArrayList
+        
+        double sum= 0, prom = 0;
+        
         ArrayList <Calificacion> calificaciones = new ArrayList<>();
         calificaciones.add(c1);
         calificaciones.add(c2);
@@ -40,7 +43,15 @@ public class ManejoArrayList3 {
                     calificaciones.get(i).obtenerProfesor().obtenerNombre(), 
                     calificaciones.get(i).obtenerNombreMateria(),
                     calificaciones.get(i).obtenerNota());
+            
+            sum = (calificaciones.get(i).obtenerNota())+ sum;
+            
         }
+        
+        prom = sum/3;
+        
+        
+        System.out.printf("El promedio de calificaciones es: %.1f \n" , prom);
         
         
     }

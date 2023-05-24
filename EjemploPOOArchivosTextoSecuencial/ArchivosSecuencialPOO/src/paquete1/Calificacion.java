@@ -11,6 +11,7 @@ public class Calificacion{
     private String nombreMateria;
     private Profesor profesor;
 
+
     public Calificacion(double n, String nombre) {
         nota = n;
         nombreMateria = nombre;
@@ -28,6 +29,8 @@ public class Calificacion{
     public void establecerProfesor(Profesor n) {
         profesor = n;
     }
+    
+
 
     public double obtenerNota() {
         return nota;
